@@ -1,3 +1,4 @@
+
 # Web3 Message Signer & Verifier
 
 A full-stack Web3 application that allows users to authenticate with Dynamic.xyz embedded wallets, sign custom messages, and verify signatures through a secure backend API.
@@ -275,3 +276,6 @@ For questions or issues:
 ---
 
 Built with ❤️ using React, TypeScript, Node.js, and Dynamic.xyz
+
+
+
