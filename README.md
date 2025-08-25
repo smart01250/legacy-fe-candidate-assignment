@@ -4,7 +4,7 @@ A full-stack Web3 application that allows users to authenticate with Dynamic.xyz
 
 ## 🚀 Live Demo
 
-**[Try the Live Application](https://web3-message-signer-verifier-pnbp9j269.vercel.app)**
+**[Try the Live Application](https://web3-message-signer-verifier-app.vercel.app)**
 
 Experience the full Web3 message signing and verification workflow with real Dynamic.xyz authentication and cryptographic signature validation.
 
@@ -192,7 +192,7 @@ Web3 Message Signer & Verifier/
 ## 🚀 Deployment
 
 ### Live Production Deployment
-**Application URL**: https://web3-message-signer-verifier-pnbp9j269.vercel.app
+**Application URL**: https://web3-message-signer-verifier-app.vercel.app
 
 This application is deployed as a single repository on Vercel with:
 - **Frontend**: React app built and served as static files
