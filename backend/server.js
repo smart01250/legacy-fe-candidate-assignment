@@ -5,7 +5,7 @@ const path = require('path');
 require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3001;
 const DYNAMIC_API_KEY = process.env.DYNAMIC_API_KEY;
 const DYNAMIC_ENVIRONMENT_ID = process.env.DYNAMIC_ENVIRONMENT_ID;
 
@@ -33,7 +33,7 @@ app.get('/api/config', (req, res) => {
     
     let config = {
       DYNAMIC_ENVIRONMENT_ID: '623128fa-dcc7-4708-b599-880890d60566',
-      API_BASE_URL: 'http://localhost:3002/api'
+      API_BASE_URL: 'http://localhost:3001/api'
     };
 
     if (fs.existsSync(frontendEnvPath)) {

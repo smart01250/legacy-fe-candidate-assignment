@@ -152,7 +152,7 @@ function App() {
 
   const verifySignature = async (signedMsg: SignedMessage) => {
     try {
-      const response = await fetch('http://localhost:3002/api/verify-signature', {
+      const response = await fetch('/api/verify-signature', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
