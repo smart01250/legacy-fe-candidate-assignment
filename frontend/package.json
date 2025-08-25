@@ -4,12 +4,9 @@
   "description": "Frontend React app for Web3 Message Signer & Verifier",
   "type": "module",
   "scripts": {
-    "dev": "node ./node_modules/vite/bin/vite.js --host 0.0.0.0 --port 3000 --force",
-    "dev:clean": "rm -rf node_modules/.vite && npm run dev",
-    "dev:custom": "node run-vite.mjs",
-    "dev:static": "node dev-server.cjs",
-    "build": "node ./node_modules/vite/bin/vite.js build",
-    "preview": "node ./node_modules/vite/bin/vite.js preview",
+    "dev": "vite --host 0.0.0.0 --port 3000",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "vitest run",
     "test:ui": "vitest --ui"
   },
