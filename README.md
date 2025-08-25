@@ -2,6 +2,12 @@
 
 A full-stack Web3 application that allows users to authenticate with Dynamic.xyz embedded wallets, sign custom messages, and verify signatures through a secure backend API.
 
+## 🚀 Live Demo
+
+**[Try the Live Application](https://web3-message-signer-verifier-pnbp9j269.vercel.app)**
+
+Experience the full Web3 message signing and verification workflow with real Dynamic.xyz authentication and cryptographic signature validation.
+
 ## 🏗️ Architecture
 
 ### Frontend (React 18 + TypeScript + Vite)
@@ -185,23 +191,26 @@ Web3 Message Signer & Verifier/
 
 ## 🚀 Deployment
 
-### Frontend (Vercel)
-```bash
-cd frontend
-npm run build
-# Deploy dist/ folder to Vercel
+### Live Production Deployment
+**Application URL**: https://web3-message-signer-verifier-pnbp9j269.vercel.app
+
+This application is deployed as a single repository on Vercel with:
+- **Frontend**: React app built and served as static files
+- **Backend**: Express API endpoints converted to Vercel serverless functions
+- **Database**: Client-side storage using localStorage
+
+### Vercel Deployment Configuration
+```json
+{
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/dist"
+}
 ```
 
-### Backend (Render/Railway)
-```bash
-cd backend
-npm run build
-# Deploy with start command: npm start
-```
-
-### Environment Variables for Production
-- **Frontend**: `VITE_DYNAMIC_ENVIRONMENT_ID`, `VITE_API_BASE_URL`
-- **Backend**: `PORT`, `NODE_ENV=production`
+### Environment Variables (Vercel)
+- `DYNAMIC_ENVIRONMENT_ID`: Dynamic.xyz environment ID
+- `DYNAMIC_API_KEY`: Dynamic.xyz API key for authentication
+- `NODE_ENV`: Set to `production`
 
 ## 🔄 Trade-offs and Future Improvements
 
